@@ -1,0 +1,31 @@
+{
+  "name": "yemengo-frontend",
+  "version": "1.0.0",
+  "description": "YemenGo Frontend - E-commerce platform designed for Yemen market",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Static files ready for deployment'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "ecommerce",
+    "yemen",
+    "frontend",
+    "marketplace",
+    "shopping",
+    "arabic"
+  ],
+  "author": "YemenGo Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hajshihab/yemengo-frontend-web.git"
+  },
+  "homepage": "https://github.com/hajshihab/yemengo-frontend-web#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
