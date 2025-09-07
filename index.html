@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يمن-جو | منصة التجارة الإلكترونية الشاملة في اليمن</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <div class="logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>يمن-جو</span>
+                    </div>
+                </div>
+                
+                <div class="nav-search">
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن أي شيء..." id="searchInput">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="nav-btn">
+                        <i class="fas fa-user"></i>
+                        <span>تسجيل الدخول</span>
+                    </button>
+                    <button class="nav-btn cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    مرحباً بك في <span class="highlight">يمن-جو</span>
+                </h1>
+                <p class="hero-subtitle">
+                    منصة التجارة الإلكترونية الشاملة في اليمن - كل ما تحتاجه في مكان واحد
+                </p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>توصيل سريع</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>دفع آمن</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-gavel"></i>
+                        <span>مزادات مباشرة</span>
+                    </div>
+                </div>
+                <button class="cta-button">
+                    <span>ابدأ التسوق الآن</span>
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تسوق حسب الفئة</h2>
+                <p class="section-subtitle">اكتشف مجموعة واسعة من المنتجات والخدمات</p>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- سيتم ملؤها بـ JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Auctions Section -->
+    <section class="auctions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">المزادات المباشرة</h2>
+                <p class="section-subtitle">شارك في المزادات واحصل على أفضل العروض</p>
+            </div>
+            
+            <div class="auctions-grid" id="auctionsGrid">
+                <!-- سيتم ملؤها بـ JavaScript -->
+            </div>
+            
+            <div class="section-footer">
+                <button class="view-all-btn">
+                    <span>عرض جميع المزادات</span>
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">المنتجات المميزة</h2>
+                <p class="section-subtitle">أفضل المنتجات المختارة خصيصاً لك</p>
+            </div>
+            
+            <div class="products-grid" id="featuredProductsGrid">
+                <!-- سيتم ملؤها بـ JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" id="totalStores">0</h3>
+                        <p class="stat-label">متجر مسجل</p>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" id="totalProducts">0</h3>
+                        <p class="stat-label">منتج متاح</p>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" id="totalAuctions">0</h3>
+                        <p class="stat-label">مزاد نشط</p>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">1000+</h3>
+                        <p class="stat-label">عميل راضي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>يمن-جو</span>
+                    </div>
+                    <p class="footer-description">
+                        منصة التجارة الإلكترونية الرائدة في اليمن، نربط التجار بالعملاء ونوفر تجربة تسوق استثنائية.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="#privacy">سياسة الخصوصية</a></li>
+                        <li><a href="#terms">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">خدماتنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="#delivery">خدمة التوصيل</a></li>
+                        <li><a href="#auctions">المزادات</a></li>
+                        <li><a href="#stores">المتاجر</a></li>
+                        <li><a href="#support">الدعم الفني</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 يمن-جو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>جاري التحميل...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
