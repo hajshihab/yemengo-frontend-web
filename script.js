@@ -1,5 +1,5 @@
 // تكوين الاتصال بالـ Backend
-const API_BASE_URL = 'https://5000-if0p546c5cuz1r2esvd82-95ade73f.manusvm.computer/api';
+const API_BASE_URL = 'https://e5h6i7cvl38e.manus.space/api';
 
 // Helper function to fetch data from API
 async function fetchData(endpoint) {
